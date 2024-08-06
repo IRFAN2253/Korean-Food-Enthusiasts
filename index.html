@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korean Food Enthusiasts</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://th.bing.com/th/id/OIP.diajV23LkqqmadAbKEoZqQHaKd?pid=ImgDet&w=207&h=292&c=7&dpr=1,5" type="image/x-icon">
+</head>
+<body>
+    
+    <header>
+        <h2>Korean Food Enthusiasts</h2>
+        <marquee direction="right" behavior="alternate" scrollamount="17" style="background-color: #00d9ff;" id="marquee"><b>Selamat Datang di Restaurant Kami Para Penggemar Korea</b></marquee>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home" id="homeLink">Home</a></li>
+            <li><a href="#products" id="productsLink">Products</a></li>
+            <li><a href="#contact" id="contactLink">Contact Us</a></li>
+            <li><a href="#about" id="aboutLink">About Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <aside class="left">
+            <br>
+            <div class="border-wrapper">
+            <a href="#" id="purchaseLink"><b>Beli Produk</b></a>
+            </div>
+        </aside>
+        <main class="content">
+            <div id="welcomeMessage">
+            <h1> Selamat Datang di Surga Makanan Korea. </h1>
+            <h2> Mari Menyantap Cita Rasa Korea! <br></h2> 
+            <img src="https://th.bing.com/th/id/OIP.6UxcoIggB5CIy8Wyq-gAdQAAAA?pid=ImgDet&w=207&h=122&c=7&dpr=1,5" style="width: 224px; height: auto; clip-path: inset(0 0 9.5px 0); position: relative; bottom: -7px;">
+            <h3> Nikmati berbagai pilihan makanan khas Korea yang lezat dan segar. <br> Di sini, Anda akan menemukan berbagai pilihan makanan Korea yang dibuat dengan bahan-bahan berkualitas dan resep autentik. <br> Pesan sekarang dan rasakan keunikan cita rasa Korea langsung dari dapur kami! </h3>
+            </div>
+
+            <div id="productDetails">
+                
+            </div>
+
+            <div id="contactUs" style="display: none;">
+                <h2>Kontak Kami</h2>
+                <table>
+                <tr>
+                    <td align="left"> Nama </td>
+                    <td align="left"> : </td>
+                    <td align="left"> MUHAMMAD IRFAN </td>
+                </tr>
+                <tr>
+                    <td align="left"> Kelas </td>
+                    <td align="left"> : </td>
+                    <td align="left"> SISTEM INFORMASI 5 </td>
+                </tr>
+                <tr>
+                    <td align="left"> NIM </td>
+                    <td align="left"> : </td>
+                    <td align="left"> 10523204 </td>
+                </tr>
+            </table>
+            <p> Email : <a href="mailto:irfan.10523204@mahasiswa.unikom.ac.id">irfan.10523204@mahasiswa.unikom.ac.id</a> </p>
+            <img src="https://i.pinimg.com/474x/b6/33/b6/b633b6bfac48da4687e145865b8b130e.jpg" style="width: 100px; height: auto; clip-path: inset(40px 0 0 0 round 10px); position: relative; top: -30px; overflow: hidden;">
+            </div>
+
+            <div id="aboutUs" style="display: none;">
+            <h2> Tentang Kami </h2>
+            <img src="https://th.bing.com/th/id/OIP.diajV23LkqqmadAbKEoZqQHaKd?pid=ImgDet&w=207&h=292&c=7&dpr=1,5" style="width: 200px; height: auto; float: right; margin-right: 10px; clip-path: circle(62% at 50% 50%);">   
+            <h2 align="center" class="gradient-text"> Tujuan Kami </h2>
+            <h4 align="left" style= "margin-left: 10px;"> Kami berkomitmen untuk menjadi tujuan utama bagi penggemar kuliner Korea dengan menyajikan hidangan yang autentik dan berkualitas tinggi. <br><br> Kami berusaha menghadirkan makanan yang dibuat dari bahan-bahan segar dan resep tradisional, dengan memberikan pengalaman makan yang memuaskan melalui rasa yang autentik dan pelayanan yang ramah. <br><br> Kami terus berinovasi untuk memperkenalkan berbagai pilihan hidangan Korea yang mempertahankan keaslian dan kualitas terbaik dalam setiap sajian. </h4>
+            </div>
+
+        </main>
+        <aside class="right">
+            <div id="products">
+                <h2>Produk Kami</h2>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Korean Food Enthusiasts. All rights reserved.</p>
+    </footer>
+
+    <div id="purchaseFormOverlay" class="overlay">
+        <div class="overlay-content">
+            <span class="closebtn" id="closeForm">&times;</span>
+            <h2><center>Transaksi Pembelian</center></h2>
+            <form id="purchaseForm">
+                <label for="name">Nama Anda:</label>
+                <input type="text" id="name" name="name" placeholder="Masukkan Nama Lengkap Anda" required><br><br>
+
+                <label for="address">Alamat Pengantaran:</label>
+                <input type="text" id="address" name="address" placeholder="Masukkan Alamat Yang Sesuai" required><br><br>
+
+                <label> Produk yang ingin Anda beli: </label><br>
+                <div id="productCheckboxes">  
+                    
+                </div><br>
+
+                <fieldset>
+                    <legend><b> Metode Pembayaran </b></legend>
+                    <label><input type="radio" name="paymentMethod" value="Kredit" required> Kredit</label>
+                    <label><input type="radio" name="paymentMethod" value="Debit" required> Debit</label>
+                    <label><input type="radio" name="paymentMethod" value="E-Money" required> E-Money</label>
+                    <label><input type="radio" name="paymentMethod" value="Transfer Bank" required> Transfer Bank</label>
+                    <label><input type="radio" name="paymentMethod" value="COD" required> COD</label>
+                </fieldset>
+                <hr>
+                <button type="submit">Checkout</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="invoiceModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 align="center">Struk Pembelian</h2>
+        <div id="invoiceDetails"></div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
